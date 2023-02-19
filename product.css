@@ -79,18 +79,75 @@
     padding: 8px;
     border-radius: 10px;
 }
-html,
-
-body {
-
-  width: 100%;
-
-  height: 100%;
-
-  margin: 0px;
-
-  padding: 0px;
-
-  overflow-x: hidden;
-
-}
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+/* SECTION 1 */
+.product-heading {
+    width: 100%;
+    height: 80px; /* reduce height for mobile view */
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-heading .product-container {
+    margin: 10px; /* reduce margin for mobile view */
+  }
+  
+  .product-heading .product-container h1 {
+    font-size: 24px; /* reduce font size for mobile view */
+  }
+  
+  /* SECTION 2 */
+  .product-detail {
+    width: 100%;
+    height: auto; /* allow height to adjust based on content */
+  }
+  
+  .product-detail .product-container {
+    flex-direction: column; /* switch to column layout for mobile view */
+    align-items: center;
+  }
+  
+  .product-detail .product-container .product-pictures {
+    width: 100%;
+    margin-bottom: 20px; /* add margin for spacing */
+  }
+  
+  .product-detail .product-container .product-detail-body {
+    width: 100%;
+    padding: 0 10px; /* add padding for spacing */
+  }
+  
+  .product-detail .product-container .product-detail-body .product-title {
+    font-size: 24px; /* reduce font size for mobile view */
+  }
+  
+  .product-detail .product-container .product-detail-body .product-price {
+    margin-top: 5px; /* reduce margin for mobile view */
+    font-size: 22px; /* reduce font size for mobile view */
+  }
+  
+  .product-detail .product-container .product-detail-body h4 {
+    margin-top: 5px; /* reduce margin for mobile view */
+    font-size: 18px; /* reduce font size for mobile view */
+  }
+  
+  .product-detail .product-container .product-detail-body ul {
+    margin-left: 20px; /* reduce margin for mobile view */
+  }
+  
+  .product-detail .product-container .product-detail-body .buttons {
+    margin-top: 10px; /* reduce margin for mobile view */
+    display: flex;
+    flex-wrap: wrap; /* allow buttons to wrap in mobile view */
+  }
+  
+  .product-detail .product-container .product-detail-body .buttons .buy-now {
+    width: 100%;
+    margin-bottom: 10px; /* add margin for spacing */
+  }
+  
+  .product-detail .product-container .product-detail-body .buttons .add-to-cart {
+    width: 100%;
+  }
+}  
